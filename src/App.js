@@ -1,4 +1,5 @@
-import Greeting from "./Greeting";
+import Card from "./components/Card";
+import Greeting from "./components/Greeting";
 
 function App() {
   // logic
@@ -14,12 +15,15 @@ function App() {
   // view
   return (
     <div className="App">
-      변경 !!
+      변경~ !!
 
-      <Greeting />
-      <Greeting />
-      <Greeting />
-      <Greeting />
+      {/* <Greeting />
+      <Greeting /> */}
+      <Card imgUrl={"https://cf.image-farm.s.zigzag.kr/original/cms/2026/09/10/202609100241225840_031442.jpg?width=1029&height=1188&quality=80&format=webp&transparent=true"} itemName={"모델1"}/>
+      <Card imgUrl={"https://cf.image-farm.s.zigzag.kr/original/cms/2026/09/06/202609061348032352_092237.png?quality=80&format=webp&transparent=true&width=1029&height=1188"} itemName={"모델2"}/>
+      <Card imgUrl={"https://cf.product-image.s.zigzag.kr/original/d/2026/8/24/2833_202608241452277531_95137.gif?width=400&height=400&quality=80&format=webp&transparent=true"} itemName={"모델3"}/>
+      <Card />
+      <Card />
     </div>
   );
 }
